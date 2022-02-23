@@ -21,5 +21,5 @@ Route::get('/', function () {
 
 
 Route::get('/products',[ProductController::class,'index']);
-Route::get('/checkout',[ChekoutController::class,'scan']);
+
 Route::post('/checkout',[ChekoutController::class,'scan'])->name('checkout.scan');
